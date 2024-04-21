@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.rating{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -150%)rotateY(180deg);
+    display: flex;
+    justify-content: center;
+   
+}
+.container{
+    background-color: aqua
+}
+.rating input{
+    display: none;
+    
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    /* background: #ccc; */
+   
+}
+.rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+
+}
+.rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: gold;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(149, 30, 30, 0.5);
+   
+}
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after{
+    opacity: 1;
+    /* rotate: 70deg; */
+}
+.textarea
+{
+margin: 10px;
+   position: relative;
+   top: 50px;
+   right: 240px;
+}
+.btn{
+    position: relative;
+    top: 46px;
+    right: 230px;
+}
+header{
+    position: relative;
+    top: 50px;
+    right: 192px;
+   text-align: center;
+}
+#star5:checked~form header::before{
+    content: "i hate it";
+}
+#star4:checked~form header::before{
+    content: "i dont like it";
+}
+#star3:checked~form header::before{
+    content: "good";
+}
+#star2:checked~form header::before{
+    content: "awesome";
+}
+#star1:checked~form header::before{
+    content: "excelent";
+}
+form header{
+    width: 100%;
+    font-size: 25px;
+    color:#fe7;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    transform: translate(0,0) rotateY(180deg);
+}
+form .textarea textarea{
+   height: 100px;
+   width:190px;
+   color: #eee;
+   border: 1px solid #333;
+   background: #222;
+   padding: 5px;
+   font-size: 17px;
+   resize: none;
+   transform: translate(0,0) rotateY(180deg);
+   
+}
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+    
+}
+form .btn button{
+    height: 30px;
+    width: 200px;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    transform: all 0.2s ease;
+    text-transform: uppercase;;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    transform: translate(0,0) rotateY(180deg);
+    /* position: relative; */
+    /* top: -41px; */
+}
+form .btn button:hover{
+    background: #1b1b1b;
+    }
+/* #btn:checked~header::before{
+    content:"thanku for review";
+} */
+.btn1{
+    position: relative;
+    top: -41px;
+}
+.popup{
+    height: 337px;
+    width: 400px;
+    background: #fff;
+    border-radius:6px;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-80%, -80%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-20%,-80%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin: top -20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(0,0) rotateY(180deg);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    transform: translate(0,0) rotateY(180deg);
+}
+p{
+    transform: translate(0,0) rotateY(180deg);
+    font-size: 25px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
