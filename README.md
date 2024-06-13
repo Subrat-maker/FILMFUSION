@@ -11,7 +11,6 @@ I made this website as my first big project when i was just a beginner in web de
 ![App Screenshot]()
 
 ## Demo
-cinemaa
 themeforest.net
 
 ## Features
